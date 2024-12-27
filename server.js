@@ -26,7 +26,7 @@ app.use('/api/chat', ChatRoutes);
 const server = createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: 'http://localhost:3000',
+        origin: 'https://chatappv2-2.onrender.com/',
         // origin: ['https://chatbotedit.vercel.app'],
         methods: ['GET', 'POST'],
         credentials: true,
