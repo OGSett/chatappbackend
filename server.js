@@ -26,11 +26,12 @@ app.use('/api/chat', ChatRoutes);
 const server = createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: 'https://chatappbackend-kozz.onrender.com',
+        origin: ['https://chatappv2-2.onrender.com', 'http://localhost:3000'],
         methods: ['GET', 'POST'],
         credentials: true,
     },
 });
+
 
 // connect to db
 mongoose
